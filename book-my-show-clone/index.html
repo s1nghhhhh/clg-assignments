@@ -3,113 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book My Show - Book Tickets</title>
+    <title>BookMyShow Clone</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="components/sidebar.css">
+    <link rel="stylesheet" href="components/player.css">
+    <link rel="stylesheet" href="components/main-content.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <div class="logo">BookMyShow</div>
-            <div class="search-bar">
-                <input type="text" placeholder="Search for Movies, Events, Plays, Sports">
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">
+                <h2>BookMyShow</h2>
             </div>
-            <div class="nav-right">
-                <select>
-                    <option>Mumbai</option>
-                    <option>Delhi</option>
-                    <option>Bangalore</option>
-                </select>
-                <button class="sign-in">Sign In</button>
-            </div>
-        </div>
-    </nav>
-
-    <main>
-        <section class="hero">
-            <h1>Recommended Movies</h1>
-            <div class="movie-grid">
-                <div class="movie-card">
-                    <div class="movie-poster"></div>
-                    <h3>Avengers: Endgame</h3>
-                    <p>Action/Sci-Fi</p>
-                    <button>Book Now</button>
+            <ul class="nav-links">
+                <li class="active"><i class="fas fa-home"></i> Home</li>
+                <li><i class="fas fa-film"></i> Movies</li>
+                <li><i class="fas fa-theater-masks"></i> Events</li>
+            </ul>
+            <div class="playlists">
+                <div class="playlist-header">
+                    <h3>Categories</h3>
                 </div>
-                <div class="movie-card">
-                    <div class="movie-poster"></div>
-                    <h3>The Dark Knight</h3>
-                    <p>Action/Drama</p>
-                    <button>Book Now</button>
-                </div>
-                <div class="movie-card">
-                    <div class="movie-poster"></div>
-                    <h3>Inception</h3>
-                    <p>Sci-Fi/Action</p>
-                    <button>Book Now</button>
-                </div>
-                <div class="movie-card">
-                    <div class="movie-poster"></div>
-                    <h3>Interstellar</h3>
-                    <p>Sci-Fi/Drama</p>
-                    <button>Book Now</button>
-                </div>
-            </div>
-        </section>
-
-        <section class="categories">
-            <h2>Entertainment Categories</h2>
-            <div class="category-grid">
-                <div class="category">Movies</div>
-                <div class="category">Events</div>
-                <div class="category">Plays</div>
-                <div class="category">Sports</div>
-            </div>
-        </section>
-
-        <section class="premieres">
-            <h2>Premieres</h2>
-            <div class="premiere-grid">
-                <div class="premiere-card">
-                    <div class="premiere-poster"></div>
-                    <div class="premiere-info">
-                        <h3>New Release</h3>
-                        <p>Coming this Friday</p>
-                    </div>
-                </div>
-                <div class="premiere-card">
-                    <div class="premiere-poster"></div>
-                    <div class="premiere-info">
-                        <h3>Special Screening</h3>
-                        <p>Book Now</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>Book My Show</h4>
-                <p>Book your entertainment with ease</p>
-            </div>
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li>About Us</li>
-                    <li>Contact Us</li>
-                    <li>Terms of Service</li>
-                    <li>Privacy Policy</li>
+                <ul class="playlist-list">
+                    <li>Bollywood</li>
+                    <li>Hollywood</li>
+                    <li>Sports</li>
+                    <li>Concerts</li>
                 </ul>
             </div>
-            <div class="footer-section">
-                <h4>Connect With Us</h4>
-                <div class="social-links">
-                    <span>Facebook</span>
-                    <span>Twitter</span>
-                    <span>Instagram</span>
+        </nav>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="navigation-buttons">
+                    <button class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="nav-btn"><i class="fas fa-chevron-right"></i></button>
                 </div>
-            </div>
-        </div>
-    </footer>
+                <div class="user-menu">
+                    <button class="profile-btn">
+                        <i class="fas fa-user"></i>
+                        Guest User
+                    </button>
+                </div>
+            </header>
+
+            <section class="featured">
+                <h1>Recommended Movies</h1>
+                <div class="featured-grid">
+                    <div class="featured-item">
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OS4xLzEwICA5MS45SyB2b3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00329481-bcufavugyg-portrait.jpg" alt="Movie">
+                        <span>Animal</span>
+                    </div>
+                    <div class="featured-item">
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC45LzEwICAzMi4ySyB2b3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00311762-qhwxebprnf-portrait.jpg" alt="Movie">
+                        <span>Sam Bahadur</span>
+                    </div>
+                    <div class="featured-item">
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-Ny45LzEwICA0Ny40SyB2b3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00310187-nmwqjhuggl-portrait.jpg" alt="Movie">
+                        <span>Tiger 3</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="recently-played">
+                <h2>Upcoming Events</h2>
+                <div class="track-grid">
+                    <div class="track-card">
+                        <div class="track-image">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAxMCBEZWM%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00371866-ynqvrxmknq-portrait.jpg" alt="Event">
+                            <button class="book-btn">Book</button>
+                        </div>
+                        <h4>Sunburn Arena</h4>
+                        <p>Mumbai</p>
+                    </div>
+                    <div class="track-card">
+                        <div class="track-image">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCA5IERlYw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00358308-rnznqnzwpr-portrait.jpg" alt="Event">
+                            <button class="book-btn">Book</button>
+                        </div>
+                        <h4>Comedy Show</h4>
+                        <p>Delhi</p>
+                    </div>
+                    <div class="track-card">
+                        <div class="track-image">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCA5IERlYyBvbndhcmRz,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00348054-ktzzmxqvzj-portrait.jpg" alt="Event">
+                            <button class="book-btn">Book</button>
+                        </div>
+                        <h4>Music Festival</h4>
+                        <p>Bangalore</p>
+                    </div>
+                    <div class="track-card">
+                        <div class="track-image">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAyMyBEZWM%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00372396-xpxgqtrdxj-portrait.jpg" alt="Event">
+                            <button class="book-btn">Book</button>
+                        </div>
+                        <h4>India vs South Africa</h4>
+                        <p>Cricket Stadium, Chennai</p>
+                    </div>
+                    <div class="track-card">
+                        <div class="track-image">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAxNyBEZWM%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00361456-qnpnkpbczc-portrait.jpg" alt="Event">
+                            <button class="book-btn">Book</button>
+                        </div>
+                        <h4>Stand-Up Comedy</h4>
+                        <p>Hyderabad</p>
+                    </div>
+                    <div class="track-card">
+                        <div class="track-image">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNiBEZWM%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00358308-rnznqnzwpr-portrait.jpg" alt="Event">
+                            <button class="book-btn">Book</button>
+                        </div>
+                        <h4>Music Concert</h4>
+                        <p>Pune</p>
+                    </div>
+                    <div class="track-card">
+                        <div class="track-image">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNCBEZWM%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00371853-nweqvyqrsp-portrait.jpg" alt="Event">
+                            <button class="book-btn">Book</button>
+                        </div>
+                        <h4>Theatre Play</h4>
+                        <p>Kolkata</p>
+                    </div>
+                    <div class="track-card">
+                        <div class="track-image">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAzMCBEZWM%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00347704-jldmxfqjfk-portrait.jpg" alt="Event">
+                            <button class="book-btn">Book</button>
+                        </div>
+                        <h4>New Year's Eve</h4>
+                        <p>Goa</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
